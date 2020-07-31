@@ -1,7 +1,7 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 29/07/2020
+  Fecha de modificación: 30/07/2020
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
@@ -12,6 +12,7 @@
 #include <ifaddrs.h>
 #include <signal.h>
 #include <netdb.h>
+#include <ctype.h>
 #include <asm/types.h>
 #include <sys/time.h>
 #include <sys/socket.h>
@@ -51,3 +52,4 @@
 
 
 int isAnError(int);
+int getFlags(int,char**);
