@@ -146,7 +146,7 @@ ___Respuesta___
   08 00                   # 16-17 bytes Protocol type
   06                      # 18 byte     Hardware Length
   04                      # 19 byte     Protocol Length
-  00 09                   # 20-21 bytes Op Code Answer ARP
+  00 09                   # 20-21 bytes Op Code Answer ARP Inverse
   YY YY YY YY YY YY       # 22-27 bytes MAC de la interfaz de red que nos responde
   XY XY XY XY             # 28-31 bytes IP a la cual se obtuvo MAC
   XX XX XX XX XX XX       # 32-37 bytes MAC de la Interfaz de red
