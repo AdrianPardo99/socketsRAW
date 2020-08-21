@@ -1,4 +1,4 @@
-## Socket RAW application ##
+### Socket RAW application ###
 Aplicación en construcción
 
 ```bash
@@ -7,7 +7,7 @@ Aplicación en construcción
 #Next
   sudo ./main
 ```
-# Tramas de datos físicas de datos
+## Tramas de datos físicas de datos ##
 En la programación y análisis de tramas de datos en la red es necesario saber que existe una estructura básica de como se envian las tramas de datos las cuales inicialmente utilizan una pila básica de como se ordenan los datos
 ```bash
   |MAC-Destination|MAC-Source|Ethertype/Length|Data|
@@ -22,7 +22,7 @@ __Donde__
 | Data | Es un conjunto de tamaño N bytes el cual por default tiene un limite de 1500 bytes para datos dependiendo de la interfaz de red especificado como la Unidad de Transmisión Máxima (MTU Maximum Transmission Unit) |
 
 
-# ARP protocol #
+## ARP protocol ##
 El Protocolo de Resolución de Direcciones por sus siglas (ARP Address Resolution Protocol), es un protocolo cuyo fin de creación es conocer la distribución de direcciones IP/MAC de una red de computadoras las cuales pueden estar dentro o no de una red local, a continuación se muestra la estructura del protocolo.
 
 __Estructura a partir de Ethertype ARP__
@@ -76,7 +76,7 @@ Estos códigos son:
 | 0x0008 | Solicitud ARP Inversa (IP a partir de MAC) |
 | 0X0009 | Respuesta ARP Inversa |
 
-__ARP Normal Petition__
+# ARP Normal Petition #
 
 ___Petición___
 
@@ -114,7 +114,7 @@ ___Respuesta___
   XZ XZ XZ XZ             # 38-41 bytes IP de origen de la interfaz de red
 ```
 
-__ARP Inverse Petition__
+# ARP Inverse Petition #
 
 ___Petición___
 
