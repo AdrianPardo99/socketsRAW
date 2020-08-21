@@ -147,7 +147,7 @@ Si bien la petición de ARP normal es tener conocimiento de la IP y buscar el a 
   04                      # 19 byte     Protocol Length
   00 09                   # 20-21 bytes Op Code Answer ARP Inverse
   YY YY YY YY YY YY       # 22-27 bytes MAC de la interfaz de red que nos responde
-  XY XY XY XY             # 28-31 bytes IP a la cual se obtuvo MAC
+  XY XY XY XY             # 28-31 bytes IP de que se obtuvo la MAC
   XX XX XX XX XX XX       # 32-37 bytes MAC de la Interfaz de red
   XZ XZ XZ XZ             # 38-41 bytes IP de origen de la interfaz de red
 ```
