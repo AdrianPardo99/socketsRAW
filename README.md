@@ -1,4 +1,4 @@
-#### Socket RAW application ####
+# Socket RAW application #
 Aplicación en construcción
 
 ```bash
@@ -22,7 +22,7 @@ __Donde__
 | Data | Es un conjunto de tamaño N bytes el cual por default tiene un limite de 1500 bytes para datos dependiendo de la interfaz de red especificado como la Unidad de Transmisión Máxima (MTU Maximum Transmission Unit) |
 
 
-### ARP protocol ###
+# ARP protocol #
 El Protocolo de Resolución de Direcciones por sus siglas (ARP Address Resolution Protocol), es un protocolo cuyo fin de creación es conocer la distribución de direcciones IP/MAC de una red de computadoras las cuales pueden estar dentro o no de una red local, a continuación se muestra la estructura del protocolo.
 
 ## Estructura a partir de Ethertype ARP ##
@@ -53,7 +53,7 @@ __Donde__
 | IP-D | Es la IP del destino de la red 4 bytes |
 
 
-# Tipos de Hardware #
+## Tipos de Hardware ##
 
 En el apartado de Tipo de Hardware contiene opciones en las cuales se puede seleccionar que es una red bajo Ethernet u otro modelo de red/dispositivo
 
@@ -65,7 +65,7 @@ Dichos códigos son:
 | 0x000F | Frame Relay |
 | 0X0010 | ATM |
 
-# Códigos de Operación #
+## Códigos de Operación ##
 
 Es necesario tener un código de operación el cual permite conocer el estatus de la solicitud/respuesta de ARP
 
@@ -79,7 +79,7 @@ Estos códigos son:
 
 ## ARP Normal Petition ##
 
-# Petición #
+### Petición ###
 
 Cabe resaltar que si bien podemos conocer estos datos es necesario saber como esta estructurada la solicitud de la petición ARP, ahora bien a continuación se muestra una forma de cómo se estructura en valores hexadecimales la petición de forma separada:
 
@@ -98,7 +98,7 @@ Cabe resaltar que si bien podemos conocer estos datos es necesario saber como es
   XY XY XY XY             # 38-41 bytes IP a la cual se desea obtener la MAC
 ```
 
-# Respuesta #
+### Respuesta ###
 ```bash
   XX XX XX XX XX XX       # 0-5 bytes   MAC de nuestra interfaz
   YY YY YY YY YY YY       # 6-11 bytes  MAC de la interfaz de red que nos responde
@@ -116,7 +116,7 @@ Cabe resaltar que si bien podemos conocer estos datos es necesario saber como es
 
 ## ARP Inverse Petition ##
 
-# Petición #
+### Petición ###
 
 Si bien la petición de ARP normal es tener conocimiento de la IP y buscar el a quien pertenece la dirección MAC, este tipo de petición es hecha cuando se conoce la dirección física pero no se conoce la dirección IP, la cual esta estructurada de la siguiente forma:
 
@@ -135,7 +135,7 @@ Si bien la petición de ARP normal es tener conocimiento de la IP y buscar el a 
   00 00 00 00             # 38-41 bytes IP al inicio en 0's
 ```
 
-# Respuesta #
+### Respuesta ###
 
 ```bash
   XX XX XX XX XX XX       # 0-5 bytes   MAC de nuestra interfaz
