@@ -29,7 +29,8 @@ __Estructura a partir de Ethertype ARP__
 
 La estructura de la trama ARP en petición es la siguiente:
 ```bash
-  |MAC-B|MAC-S|Ethertype|Hardware-type|Protocol-type|LHardware|LAProtocol|OpCode|MAC-S|IP-S|MAC-D|IP-D|
+  |MAC-B|MAC-S|Ethertype|Hardware-type|Protocol-type|LHardware|LAProtocol|OpCode|
+    |MAC-S|IP-S|MAC-D|IP-D|
 ```
 
 La estructura de la trama de ARP en respuesta es la misma solo cambia OpCode
