@@ -1,12 +1,11 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 30/07/2020
+  Fecha de modificación: 23/08/2020
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
-#include "hardware.h"
-#include "constantsData.h"
+#include "protocols.h"
 
 void hardware(socketRaw);
 
@@ -60,6 +59,10 @@ void hardware(socketRaw sock){
   printf("\n");
   for(i=0;i<3;i++){
     free(data[i]);
+  }
+  printf("MAC Broadcast:\t");
+  for(i=0;i<6;i++){
+    printf("%.2X%s",macBroadcast[i],(i<5)?(":"):("\n"));
   }
   free(data);
 }

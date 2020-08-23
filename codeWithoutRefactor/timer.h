@@ -1,8 +1,13 @@
 /*Author: Adrian González Pardo
   Email: gozapaadr@gmail.com
   Nickname: DevCrack
-  Fecha de modificación: 30/07/2020
+  Fecha de modificación: 21/02/2019
   GitHub: AdrianPardo99
   Licencia Creative Commons CC BY-SA
 */
-datos macBroadcast[]={0xFF,0xFF,0xFF,0xFF,0xFF,0xFF},etherARP[]={0x06,0x08};
+#include <time.h>
+
+void stop(int a){
+  clock_t star=clock();
+  while(clock()<star+a);
+}

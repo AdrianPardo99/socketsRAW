@@ -9,6 +9,7 @@ comp:
 	gcc -c C/libs.c -lm -o O/libs.o -I H/
 	gcc -c C/socketInit.c -lm -o O/socketInit.o -I H/
 	gcc -c C/hardware.c -lm -o O/hardware.o -I H/
-	gcc C/main.c O/libs.o O/socketInit.o O/hardware.o -lm -o main -I H/
+	gcc -c C/arpProtocol.c -lm -o O/arpProtocol.o -I H/
+	gcc C/main.c O/libs.o O/socketInit.o O/hardware.o O/arpProtocol.o -lm -o main -I H/
 clean:
 	rm O/*
